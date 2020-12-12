@@ -1,0 +1,139 @@
+.shedule {
+	width: 100%;
+	max-width: 1320px;
+	margin: 0 auto;
+	margin-top: 70px;
+	padding: 40px 45px 45px;
+	font-family: $digital;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFD850;
+	background: #303030;
+	box-shadow: 8px 6px 9px -3px rgba(0, 0, 0, 0.29);
+	border-radius: 18px 18px 0px 0px;
+	position: relative;
+	&__snow {
+		width: 621px;
+		height: 120px;
+		position: absolute;
+		top: -40px;
+		right: -6px;
+	}
+	&__title {
+		margin-left: 22px;
+		font-family: $playfire;
+		font-size: 48px;
+		line-height: 64px;
+		color: #fff;
+	}
+	&__list {
+		margin-top: 28px;
+		padding: 16px 17px 16px 17px;
+		border: 1px solid #000000;
+		border-radius: 18px 18px 0px 0px;
+		letter-spacing: 2.5px;	
+		overflow-x: scroll;
+		&::-webkit-scrollbar { 
+			width: 0; height: 0; 
+		}
+		-ms-overflow-style: none;
+		overflow: -moz-scrollbars-none; 
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 8px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__type {
+		color: #fff;
+		font-size: 24px;
+		line-height: 27px;
+		background: #161616;
+		&-time {
+			margin-right: 8px;
+			min-width: 202px;
+			padding: 18px 18px 18px 28px;
+			border-radius: 10px 0px 0px 0px;
+		}
+		&-active {
+			width: calc(100% - 210px);
+			max-width: calc(100% - 210px);
+			padding: 18px 18px 18px 23px;
+			border-radius: 0px 10px 0px 0px;
+			min-width: 360px;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 17px;
+				height: 100%;
+				background: transparent;
+				top: 0;
+				right: -17px;
+			}
+		}
+	}
+	&__info {
+		padding: 11px 10px 11px 19px;
+		background: #161616;
+		&-time {
+			min-width: 202px;
+			margin-right: 8px;
+			padding-left: 25px;
+		}
+		&-active {
+			width: calc(100% - 210px);
+			max-width: calc(100% - 210px);
+			min-width: 360px;
+		}
+	}
+}
+
+@media screen and(max-width: 1330px) {
+	.shedule {
+		&__snow {
+			right: 0;
+		}
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.shedule {
+		padding: 50px;
+		font-size: 16px;
+   		line-height: 20px;
+   		top: -30px;
+   		&__snow {
+   			right: 0;
+   		}
+		&__title {
+			font-size: 40px;
+		}
+		&__type {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and(max-width: 920px) {
+	.shedule {
+		&__snow {
+			top: -20px;
+			width: 60%;
+			height: auto;
+		}
+	}
+}
+
+@media screen and(max-width: 480px) {
+	.shedule {
+		padding: 20px;
+		&__title {
+			font-size: 30px;
+		}
+	}
+}

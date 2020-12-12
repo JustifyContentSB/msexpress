@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Digital';
+	src: url('digital.eot');
+	src: url('../../fonts/Digital/digital.woff') format('woff'), 
+		 url('../../fonts/Digital/digital.ttf') format('truetype'), 
+		 url('../../fonts/Digital/digital.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rozha One';
+    src: url('../../fonts/RozhaOne/RozhaOne-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/RozhaOne/RozhaOne-Regular.woff2') format('woff2'),
+         url('../../fonts/RozhaOne/RozhaOne-Regular.woff') format('woff'),
+         url('../../fonts/RozhaOne/RozhaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
