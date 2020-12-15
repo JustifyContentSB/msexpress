@@ -18,7 +18,7 @@ gulp.task('script', function() {
 })
 
 gulp.task('scss', function() {
-    return gulp.src('app/scss/index/style.scss')
+    return gulp.src('app/scss/music/music.scss')
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
@@ -30,7 +30,8 @@ gulp.task('scss', function() {
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: "app"
+            baseDir: "app",
+            index: "mascarad.html"
         }
     });
 });
@@ -46,7 +47,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src(['app/js/script.js'])
+    return gulp.src(['app/js/menu.js'])
     .pipe(concat('script.min.js'))
     .pipe(terser())
     .pipe(gulp.dest('app/js'))

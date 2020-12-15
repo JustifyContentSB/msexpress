@@ -1,0 +1,24 @@
+@import '../../../node_modules/normalize.css/normalize';
+
+@import '../#base/fonts.scss';
+@import '../#base/base.scss';
+@import '../#main/vars.scss';
+@import '../#main/nav.scss';
+@import '../#main/home.scss';
+@import '../gallery/body.scss';
+@import '../gallery/page.scss';
+@import '../gallery/page-title.scss';
+@import 'page.scss';
+@import '../gallery/title.scss';
+@import '../gallery/express.scss';
+@import '../gallery/photo.scss';
+@import '../#main/favorite.scss';
+@import '../#main/person.scss';
+@import '../gallery/gallery.scss';
+@import 'quest.scss';
+@import 'clipart.scss';
+
+.photo {
+	background: transparent;
+	padding-bottom: 115px;
+}

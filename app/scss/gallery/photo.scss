@@ -1,0 +1,122 @@
+.photo {
+	padding-top: 93px;
+	padding-bottom: 181px;
+	background: url('../images/gallery/photo-bg.png'); 
+	background-repeat: no-repeat;
+	background-position: left 22% top 25%;
+	background-size: contain;
+	&__inner {
+		padding: 40px 110px 43px 46px;
+		background: #F5F5F5;
+		box-shadow: 8px 6px 9px -3px rgba(0, 0, 0, 0.25);
+		border-radius: 18px;
+		justify-content: space-between;
+	}
+	&__download {
+		form {
+			height: 100%;
+		}
+		&-label {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			border: 1px dashed #2B2A29;
+			border-radius: 18px;
+			input {
+				display: none;
+			}
+			span {
+				font-family: 'Noto Sans';
+				font-size: 18px;
+				line-height: 25px;
+				text-decoration-line: underline;
+				color: $titleColor;
+			}
+		}
+	}
+	&__info {
+		max-width: 520px;
+		padding: 0;
+		&-title {
+			text-align: left;
+		}
+		&-text {
+			margin-top: 27px;
+			span {
+				font-weight: 700;
+			}
+		}
+		&-inner {
+			margin-top: 48px;
+		}
+		&-input {
+			input {
+				width: 100%;
+				background: transparent;
+				border: none;
+				padding: 14px 0;
+				border-bottom: 1px solid #9C9C9C;
+				outline: none;
+				position: relative;
+			}
+		}
+		&-btn {
+			margin-top: 28px;
+			button {
+				padding: 18px 40px;
+				background: #FF0033;
+				border-radius: 50px;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #fff;
+				transition: all .3s ease;
+				&:hover,
+				&:focus {
+					background: #DB002C;
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 1400px) {
+	.photo {
+		&__info {
+			padding-left: 20px;
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.photo {
+		padding-bottom: 50px;
+		&__inner {
+			padding: 40px;
+		}
+		&__download {
+			&-label {
+				min-height: 300px;
+			}
+		}
+		&__info {
+			margin-top: 20px;
+			max-width: 100%;
+			padding-right: 20px;
+			&-inner {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 450px) {
+	.photo {
+		&__inner {
+			padding: 20px;
+		}
+	}
+}

@@ -630,6 +630,9 @@ body {
   .header__info {
     margin-top: 140px;
   }
+  .header__counter {
+    bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -646,6 +649,18 @@ body {
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .header__counter {
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  .header__counter {
+    bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__info {
     margin-left: 10px;
@@ -655,6 +670,18 @@ body {
   }
   .header__happy {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__counter {
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .header__counter {
+    bottom: 0;
   }
 }
 
@@ -970,7 +997,7 @@ body {
 .hall::before {
   content: '';
   position: absolute;
-  top: -105px;
+  top: -93px;
   right: 0;
   width: 100%;
   height: 290px;
@@ -1061,6 +1088,12 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 1473px) {
+  .hall::before {
+    top: -95px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hall {
     padding-bottom: 150px;
@@ -1147,10 +1180,8 @@ body {
   height: 33px;
   background: #2B2A29;
   border-radius: 0 0 22px 22px;
-}
-
-.task__link:nth-child(2n)::after {
-  background: #FF0033;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .task__link:nth-child(3n) {
@@ -1159,6 +1190,10 @@ body {
 
 .task__link:hover, .task__link:focus {
   color: inherit;
+}
+
+.task__link:hover::after, .task__link:focus::after {
+  background: #FF0033;
 }
 
 .task__ticket {
@@ -1282,7 +1317,7 @@ body {
             justify-content: center;
   }
   .task__link {
-    margin-right: 30px;
+    margin-right: 60px;
   }
   .task__link:nth-child(2n) {
     margin-right: 0;

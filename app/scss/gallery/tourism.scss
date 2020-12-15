@@ -1,0 +1,50 @@
+@import '../../../node_modules/normalize.css/normalize';
+
+@import '../#base/fonts.scss';
+@import '../#base/base.scss';
+@import '../#main/vars.scss';
+@import '../#main/nav.scss';
+@import '../#main/home.scss';
+@import 'body.scss';
+@import 'page.scss';
+@import 'page-title.scss';
+@import 'title.scss';
+@import 'express.scss';
+@import 'photo.scss';
+@import '../#main/favorite.scss';
+@import '../#main/person.scss';
+@import 'gallery.scss';
+
+.page {
+	background: url('../images/gallery/page-bg-2.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.photo {
+	padding-top: 167px;
+    background: url(../images/gallery/photo-bg-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and(max-width: 1000px) {
+	.page {
+		background-size: 60%;
+		background-position: top 20% right;
+	}
+}
+
+@media screen and(max-width: 768px) {
+	.page {
+		background-size: 45%;
+		background-position: top right;
+	}
+}
+
+@media screen and(max-width: 560px) {
+	.page {
+		background-size: 55%;
+		background-position: top right;
+	}
+}

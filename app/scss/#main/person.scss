@@ -1,0 +1,15 @@
+.person {
+	margin-top: 18px;
+	&__name {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: $titleColor;
+	}
+	&__city {
+		margin-top: 6px;
+		font-size: 14px;
+		line-height: 17px;
+		color: #9C9C9C;
+	}
+}

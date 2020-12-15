@@ -1,0 +1,177 @@
+.wagon {
+	padding-top: 169px;
+	background: url('../images/wagon/wagon-bg.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+	&__inner {
+		justify-content: space-between;
+	}
+	&__title {
+		font-family: $playfire;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 53px;
+		color: $titleColor;
+		text-transform: uppercase;
+		letter-spacing: 1px; 
+	}
+	&__text {
+		max-width: 465px;
+		margin-top: 30px;
+		p {
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__buy {
+		margin-top: 80px;
+		margin-right: 10px;
+		padding: 33px 45px 31px 45px;
+		border: 1px solid $titleColor;
+		border-radius: 18px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 41px;
+			bottom: -175px;
+			width: 228px;
+			height: 304px;
+			background: url('../images/wagon/tea.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&-slogan {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			color: $titleColor;
+		}
+		&-text {
+			margin-top: 20px;
+			p {
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-link {
+			margin-top: 78px;
+			padding-right: 17px;
+			text-align: right;
+			color: #FF0033;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			text-decoration: underline;
+			a {
+				transition: all .3s ease;
+				&:hover,
+				&:focus {
+					color: rgba(#FF0033, 0.6); 
+				}
+			}
+		}
+	}
+	&__guide {
+		margin-top: 215px;
+		padding: 41px 48px;
+		background: $titleColor;
+		color: #fff;
+		border-radius: 18px;
+		&-title {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		&-list {
+			margin-top: 20px; 
+			font-weight: 500;
+			li {
+				margin-bottom: 24px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 1400px) {
+	.wagon {
+		background-size: 65%;
+		&__buy {
+			&::after {
+				bottom: -80px;
+				width: 150px;
+				height: 193px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.wagon {
+		&__buy {
+			&::after {
+			    bottom: -70px;
+			    width: 115px;
+			    height: 160px;
+			    left: 25px;
+			}
+		}
+		&__guide {
+			padding: 25px;
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.wagon {
+		background-size: 50%; 
+		&__guide {
+			margin-top: 80px;
+		}
+		&__buy {
+			&::after {
+				left: 41px;
+				bottom: -70px;
+				width: 150px;
+				height: 200px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 475px) {
+	.wagon {
+		&__buy {
+			padding: 20px;
+			&::after {
+				left: auto;
+				height: 165px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 400px) {
+	.wagon {
+		background-size: 70%;
+	}
+}
+
+@media screen and(max-width: 375px) {
+	.wagon {
+		&__buy {
+			&::after {
+				width: 100px;
+				height: 120px;
+				bottom: -50px;
+			}
+		}
+	}
+}

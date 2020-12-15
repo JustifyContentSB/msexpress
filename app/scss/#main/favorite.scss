@@ -1,0 +1,19 @@
+.favorite {
+	margin-top: 21px;
+	display: flex;
+	align-items: center;
+	&__btn {
+		width: 22px;
+		height: 22px;
+		margin-right: 18px;
+		img {
+			line-height: 100%;
+		}
+	}
+	&__num {
+		font-size: 18px;
+		line-height: 18px;
+		text-align: center;
+		color: #9C9C9C;
+	}
+}

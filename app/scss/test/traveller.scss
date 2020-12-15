@@ -1,0 +1,46 @@
+.traveller {
+	padding: 52px 163px 74px;
+	&__title {
+		padding-top: 126px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 147px;
+			height: 104px;
+			background: url('../../images/test/test-map.png');
+		}
+	}
+	&__text {
+		margin-top: 40px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+@media screen and(max-height: 768px) {
+	.traveller {
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and(max-width: 900px) {
+	.traveller {
+		padding: 50px;
+	}
+}
+
+@media screen and(max-width: 400px) {
+	.traveller {
+		padding: 20px;
+		padding-top: 50px;
+		&__text {
+			margin-top: 20px;
+			font-size: 16px;
+		}
+	}
+}

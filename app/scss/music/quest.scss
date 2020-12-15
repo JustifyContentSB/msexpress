@@ -1,0 +1,33 @@
+.quest {
+	&__inner {
+		margin-top: 60px;
+		align-items: center;
+	}
+}
+@media screen and(max-width: 991px) {
+	.quest {
+		&__inner {
+			flex-direction: column;
+		}
+		.col-md-6 {
+			width: 100%;
+		}
+		&__time {
+			margin-bottom: 20px;
+		}
+		&__link {
+			margin-top: 20px;
+		}
+	}
+}
+
+@media screen and(max-width: 475px) {
+	.quest {
+		&__time {
+			&-descr {
+				font-size: 16px;
+				line-height: 120%;
+			}
+		}
+	}
+}

@@ -41,11 +41,7 @@
 			height: 33px;
 			background: #2B2A29;
 			border-radius: 0 0 22px 22px;
-		}
-		&:nth-child(2n) {
-			&::after {
-				background: #FF0033;
-			}
+			transition: all .3s ease;
 		}
 		&:nth-child(3n) {
 			margin-right: 0;
@@ -53,6 +49,9 @@
 		&:hover,
 		&:focus {
 			color: inherit;
+			&::after {
+				background: #FF0033;
+			}
 		}
 	}
 	&__ticket {
@@ -149,7 +148,7 @@
 			justify-content: center;
 		}
 		&__link {
-			margin-right: 30px;
+			margin-right: 60px;
 			&:nth-child(2n) {
 				margin-right: 0;
 			}

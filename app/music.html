@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MS1 Express</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/music.min.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<a class="home" href="#">
+					<img src="images/home/home.svg" alt="home-link">
+					<span class="visually-hidden">home-link</span>
+				</a>
+				<nav class="nav">
+					<a class="nav__toggle" href="#"><span></span></a>
+					<div class="nav__inner">
+						<ul class="nav__list">
+						  <li class="nav__item">
+						    <a class="nav__link" href="#">Расписание</a>
+						  </li>
+						  <li class="nav__item nav__item--active">
+						    <a class="nav__link" href="#">Зал ожидания</a>
+						  </li>
+						  <li class="nav__item">
+						    <a class="nav__link" href="#">Творческие задания</a>
+						  </li>
+						  <li class="nav__item">
+						    <a class="nav__link" href="#">Трансляция</a>
+						  </li>
+						  <li class="nav__item">
+						    <a class="nav__link" href="#">Вагоны</a>
+						  </li>
+						</ul>
+						<ul class="nav__lang">
+							<li class="nav__item  nav__item--active">
+								<a href="#" class="nav__link">Ru</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Eng</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>		
+
+		<main>
+			<div class="page-wrapper">
+				<section class="page">
+					<div class="container">
+						<div class="page__inner">
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<h1 class="page-title page__title">Хит под рельсовый бит</h1>
+									<div class="page__info">
+										<p>Hello, it’s me. И не случайно с вами, друзья, здоровается Адель. Ведь вы выбрали самое музыкальное творческое задание. В MS1 Express петь не только можно, но даже нужно. </p>
+										<p>Ведь с музыкой любые путешествия становятся веселей! Не надо стесняться, ведь перед вами целый новогодний экспресс с благодарными зрителями в лице ваших коллег</p>
+									</div>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page__snow">
+						<img src="images/icons/bottom-snow.svg" alt="snow">
+					</div>
+					<div class="page__micro"><img src="images/music/micro.png" alt="micro" width="432" height="642"></div>
+				</section>
+
+				<section class="quest">
+					<div class="container">
+						<header class="quest__header">
+							<h2 class="title">Музыкальное задание</h2>
+							<p class="quest__slogan">MS1 Express. Вперёд и с песней!</p>
+						</header>
+						<div class="quest__inner row">
+							<div class="col-lg-5 col-md-6">
+								<div class="quest__info">
+									<p class="quest__text">Записывайте на видео свои музыкальные или вокальные способности. <br>
+									Поёшь? – Отлично. <br>
+									Играешь на инструментах? – То, что нужно! <br>
+									Играешь и поёшь? – Ещё лучше! <br>
+									Вы не ограничены ни жанром, ни форматом выступления</p>
+									<div class="quest__link">
+										<a href="#">Инструкция к заданию</a>
+									</div>
+									<div class="quest__time">
+										<div class="quest__time-about">
+											<p class="quest__time-descr">Срок принятия работ музыкального жанра:</p>
+											<p class="quest__time-date">17.12.2020 до 00:00</p>
+										</div>
+										<div class="quest__time-about">
+											<p class="quest__time-descr">Открытие голосования за лучшую работу: </p>
+											<p class="quest__time-date">19.12.2020</p>
+										</div>
+										<div class="quest__time-about">
+											<p class="quest__time-descr">Голосование продлится: </p>
+											<p class="quest__time-date">до 16:00 22.12.2020</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-6">
+								<form class="form" enctype="multipart/form-data" method="post">
+									<h2 class="title form__title">Загрузить работу</h2>
+									<div class="form__inp-wrapper">
+										<div class="form__inp"><input type="text" placeholder="Имя"></div>
+										<div class="form__inp"><input type="text" placeholder="Фамилия"></div>
+										<div class="form__inp"><input type="text" placeholder="Город"></div>
+									</div>
+									<div class="form__manage">
+										<label class="form__manage-label" class="photo__download-label">
+									   		<input type="file" name="photo" placeholder="Загрузить фото">
+									   		<span>Загрузить фото</span>
+									   </label>
+										<div class="form__btn">
+											<button>Отправить</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>		
+				</section>
+			</div>
+
+			<section class="video">
+				<div class="container">
+					<h2 class="title">Видео</h2>
+					<div class="row">
+						<div class="col-lg-8">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/8hz0hqFKgZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="vote">
+				<div class="container">
+					<h2 class="title">Голосование</h2>
+					<div class="vote__list row">
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="vote__item">
+								<div class="person">
+									<p class="person__name">Александр Иванов</p>
+									<p class="person__city">Минск</p>
+								</div>
+								<div class="favorite">
+									<a class="favorite__btn" href="#"><img src="images/menu/heart-empty.svg" alt=""></a>
+									<span class="favorite__num">+0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>		
+	</div>
+	 
+	<script
+	src="https://code.jquery.com/jquery-3.5.1.min.js"
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -69,6 +69,9 @@
 		&__info {
 			margin-top: 140px;
 		}
+		&__counter {
+			bottom: 40px;
+		}
 	}
 }
 
@@ -88,6 +91,22 @@
 	}
 }
 
+@media screen and(max-width: 1050px) {
+	.header {
+		&__counter {
+			bottom: 30px;
+		}
+	}
+}
+
+@media screen and(max-width: 831px) {
+	.header {
+		&__counter {
+			bottom: 20px;
+		}
+	}
+}
+
 @media screen and(max-width: 768px) {
 	.header {
 		&__info {
@@ -98,6 +117,22 @@
 		}
 		&__happy {
 			width: 75%;
+		}
+	}
+}
+
+@media screen and(max-width: 600px) {
+	.header {
+		&__counter {
+			bottom: 10px;
+		}
+	}
+}
+
+@media screen and(max-width: 351px) {
+	.header {
+		&__counter {
+			bottom: 0;
 		}
 	}
 }

@@ -1,0 +1,66 @@
+.room {
+	padding-top: 143px;
+	padding-bottom: 235px;
+	background: url('../images/room/room.jpg');
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			margin-right: 14px;
+		}
+		a {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 243px;
+			height: 72px;
+			color: $blueColor;
+			background: #fff;
+			border-radius: 50px;
+			transition: all .3s ease;
+			&:hover,
+			&:focus {
+				background: #FF0033;
+				color: #fff;
+			}
+		}
+	}
+	&__train {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.room {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		&__list {
+			max-width: 600px;
+			li {
+				margin-bottom: 14px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 539px) {
+	.room {
+		&__list {
+			li {
+				margin-right: 0;
+				width: 100%;
+			}
+			a {
+				width: 100%;
+				font-size: 16px;
+				height: 60px;
+			}
+		}
+	}
+}

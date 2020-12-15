@@ -1,0 +1,151 @@
+.recipes {
+	margin-top: 155px;
+	&__descr {
+		max-width: 630px;
+		margin: 0 auto;
+		margin-top: 25px;
+		text-align: center;
+		color: $titleColor;
+	}
+	&__form {
+		margin-top: 64px;
+		align-items: stretch;
+		justify-content: space-between;
+		&-img {
+			max-width: 430px;   
+			padding: 48px 76px 48px 43px;
+			background: #2B2A29;
+			box-shadow: 8px 6px 9px -3px rgba(0, 0, 0, 0.25);
+			border-radius: 18px;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				right: -42px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 69px;
+				height: 302px;
+				background: url('../images/recipes/recipes.png');
+			}
+			input {
+				display: none;
+			}
+			form {
+				height: 100%;
+				min-height: 366px;
+			}
+			&__label {
+				width: 100%;
+				height: 100%;
+				min-height: 366px;
+				border: 1px dashed #DADADA;
+				border-radius: 18px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: 'Noto Sans';
+				font-size: 18px;
+				line-height: 25px;
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+		&-person {
+			max-width: 870px;
+			padding: 42px 108px; 
+			h2 {
+				margin-bottom: 19px;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 29px;
+				color: $titleColor;
+			}
+			&__recipe {
+				margin-top: 27px;
+				min-height: 113px;
+			}
+			&__info {
+				margin-top: 14px;
+				display: flex;
+				justify-content: space-between;
+				input {
+					width: 196px;
+				}
+			}
+		}
+		&-btn {
+			margin-top: 39px;
+		}
+	}
+}
+
+@media screen and(max-width: 1400px) {
+	.recipes {
+		&__form {
+			&-img {
+				padding: 40px 50px 40px 40px;
+			}
+			&-person {
+				padding: 40px 80px;
+				max-width: 745px;
+			}
+			&-person {
+				&__info {
+					input {
+						width: 30%; 
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.recipes {
+		margin-top: 83px;
+		&__form {
+			&-person {
+				min-width: 513px;
+				&__info {
+					flex-direction: column;
+					input {
+						width: 100%;
+						margin-bottom: 15px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.recipes {
+		&__form {
+			flex-direction: column;
+			&-img {
+				min-width: 100%;
+				margin-bottom: 20px;
+				&::after {
+					top: auto;
+					right: 45%;
+					bottom: -195px;
+					transform: rotate(90deg) translateX(-50%);
+				}
+				form {
+					min-height: 300px;
+				}
+				&__label {
+					min-height: 300px;
+				}
+			}
+			&-person {
+				min-width: 100%;
+			}
+		}
+		
+	}
+}

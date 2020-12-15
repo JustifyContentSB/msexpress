@@ -1,0 +1,19 @@
+.start {
+	padding: 128px 122px 75px;
+	.testing__about {
+		max-width: 531px;
+	}
+}
+
+@media screen and(max-width: 900px) {
+	.start {
+		padding: 50px;
+	}
+}
+
+@media screen and(max-width: 400px) {
+	.start {
+		padding: 20px;
+		padding-top: 50px;
+	}
+}

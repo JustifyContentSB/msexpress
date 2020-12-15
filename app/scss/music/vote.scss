@@ -1,0 +1,48 @@
+.vote {
+	margin-top: 80px;
+	&__list {
+		margin-top: 50px;
+	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+	}
+	.favorite {
+		margin-top: 0;
+		margin-left: 98px;
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.vote {
+		margin-top: 50px;
+		.col-lg-4 {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.vote {
+		&__item {
+			flex-direction: column;
+		}
+		.favorite {
+			margin-top: 10px;
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and(max-width: 475px) {
+	.vote {
+		.col-lg-4 {
+			width: 100%;
+		}
+		&__item {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}

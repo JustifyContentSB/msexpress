@@ -1,0 +1,68 @@
+.form {
+	padding: 50px;
+	height: 100%;
+	&__manage {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		&-label {
+			width: 312px;
+			height: 126px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px dashed #9C9C9C;
+			border-radius: 18px;
+			cursor: pointer;
+			input {
+				display: none;
+			}
+		}
+	}
+	&__inp {
+		&-wrapper {
+			margin-top: 37px;
+		}
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.form {
+		padding: 30px;
+		min-height: auto;
+		&__manage {
+			&-label {
+				width: 250px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.form {
+		&__manage {
+			&-label {
+				width: calc(100% - 200px);
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 475px) {
+	.form {
+		&__manage {
+			flex-direction: column;
+			align-items: stretch;
+			&-label {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		&__btn {
+			button {
+				width: 100%;
+			}
+		}
+	}
+}

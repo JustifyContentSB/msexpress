@@ -1,0 +1,78 @@
+@import '../../../node_modules/normalize.css/normalize';
+
+@import '../#base/fonts.scss';
+@import '../#base/base.scss';
+@import '../#main/vars.scss';
+@import '../#main/nav.scss';
+@import '../#main/home.scss';
+@import '../#main/form.scss';
+@import '../gallery/body.scss';
+@import '../gallery/page.scss';
+@import '../gallery/page-title.scss';
+@import '../music/page.scss';
+@import '../gallery/title.scss';
+@import '../music/form.scss';
+@import '../gallery/express.scss';
+@import '../#main/favorite.scss';
+@import '../#main/person.scss';
+@import '../gallery/gallery.scss';
+@import '../likes/quest.scss';
+@import '../music/quest.scss';
+@import '../music/video.scss';
+@import '../music/vote.scss';
+
+.page {
+	padding-top: 250px;
+	min-height: 802px;
+	background: #E2F6FF;
+	&__dance {
+		position: absolute;
+		right: 30px; 
+		top: 0;
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	.page {
+		min-height: 750px;
+		&__dance {
+			top: -50px;
+			img {
+				height: auto;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.page {
+		min-height: 627px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+		&__dance {
+			top: 50px;
+			img {
+				width: 520px;
+				height: auto;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 768px) {
+	.page {
+		min-height: auto;
+		padding-bottom: 100px;
+		&__dance {
+			img {
+				width: 200px;
+			}
+		}
+		.row {
+			width: 100%;
+		}
+		.col-lg-6 {
+			width: 100%;
+		}
+	}
+}

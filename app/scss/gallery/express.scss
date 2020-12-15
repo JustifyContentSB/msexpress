@@ -1,0 +1,38 @@
+.express {
+	margin-top: 157px;
+	&__title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		color: $titleColor;
+	}
+	&__list {
+		margin-top: 33px;
+		&-col {
+			max-width: 554px;
+			margin-right: 80px;
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+	&__item {
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and(max-width: 1400px) {
+	.express {
+		&__list {
+			&-col {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 991px) {
+	.express {
+		margin-top: 50px;
+	}
+}
