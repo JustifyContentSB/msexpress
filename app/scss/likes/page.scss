@@ -5,7 +5,7 @@
 	min-height: 834px;
 	background: #E9F8CE url('../images/likes/tree.png');
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: top right 30%;
 	position: relative;
 	&-wrapper {
 		position: relative;
@@ -44,10 +44,23 @@
 	}
 }
 
+@media screen and(max-width: 1520px) {
+	.page {
+		background-position: top right 20%;
+	}
+}
+
+@media screen and(max-width: 1400px) {
+	.page {
+		background-position: top right 5%;
+	}
+}
+
 @media screen and(max-width: 1300px) {
 	.page {
 		background-size: 60%;
 		min-height: 736px;
+		background-position: top right;
 	}
 }
 

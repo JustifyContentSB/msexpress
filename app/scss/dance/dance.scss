@@ -27,8 +27,16 @@
 	background: #E2F6FF;
 	&__dance {
 		position: absolute;
-		right: 30px; 
+		right: 250px; 
 		top: 0;
+	}
+}
+
+@media screen and(max-width: 1400px) {
+	.page {
+		&__dance {
+			right: 100px;
+		}
 	}
 }
 
@@ -37,6 +45,7 @@
 		min-height: 750px;
 		&__dance {
 			top: -50px;
+			right: 0;
 			img {
 				height: auto;
 			}

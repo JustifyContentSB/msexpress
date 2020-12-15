@@ -18,8 +18,8 @@ gulp.task('script', function() {
 })
 
 gulp.task('scss', function() {
-    return gulp.src('app/scss/music/music.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    return gulp.src('app/scss/gallery/tourism.scss')
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
@@ -31,7 +31,7 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: "app",
-            index: "mascarad.html"
+            index: "tourism.html"
         }
     });
 });

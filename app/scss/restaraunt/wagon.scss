@@ -2,7 +2,7 @@
 	padding-top: 169px;
 	background: url('../images/wagon/wagon-bg.png');
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: top right 20%;
 	&__inner {
 		justify-content: space-between;
 	}
@@ -100,9 +100,16 @@
 	}
 }
 
+@media screen and(max-width: 1530px) {
+	.wagon {
+		background-position: top right 10%;
+	}
+}
+
 @media screen and(max-width: 1400px) {
 	.wagon {
 		background-size: 65%;
+		background-position: top right 0;
 		&__buy {
 			&::after {
 				bottom: -80px;

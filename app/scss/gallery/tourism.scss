@@ -18,7 +18,7 @@
 .page {
 	background: url('../images/gallery/page-bg-2.png');
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: top 18% right 30%;
 }
 
 .photo {
@@ -28,10 +28,16 @@
     background-position: center;
 }
 
+@media screen and(max-width: 1300px) {
+	.page {
+		background-position: top 0 right 20%;
+	}
+}
+
 @media screen and(max-width: 1000px) {
 	.page {
 		background-size: 60%;
-		background-position: top 20% right;
+		background-position: top 10% right;
 	}
 }
 
